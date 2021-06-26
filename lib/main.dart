@@ -22,13 +22,18 @@ class _HomePageState extends State<HomePage> {
   Widget build(Object context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Contador"),
+        title: Text("Contador - Meu primeiro App"),
       ),
-      body: Center(
-          child: Text(
-        "CONTADOR\n$counter",
-        textAlign: TextAlign.center,
-      )),
+      body: Container(
+        color: Colors.purple,
+        child: Center(
+            child: Text(
+          "CONTADOR:\n$counter",
+          textAlign: TextAlign.center,
+          style: TextStyle(
+              color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),
+        )),
+      ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
         onPressed: () {
